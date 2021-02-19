@@ -1,4 +1,4 @@
-# EXAMPLE USING NODE-RFC.JS LIBRARY IN SAP BTP CLOUD FOUNDRY
+# Example using NODE-RFC.JS library in SAP BTP Cloud Foundry
 
 ## Important
 First of all, connection to backend using cloud connector is not supported by node-rfc library (yet...), only direct connection to backend is possible, so the RFC port of the backend must be exposed public to internet.
