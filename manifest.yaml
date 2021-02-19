@@ -1,0 +1,10 @@
+applications:
+  - name: demo-node-rfc
+    disk_quota: 300MB
+    memory: 60MB
+    instances: 1
+    random-route: true
+    health-check-type: process
+    stack: cflinuxfs3
+    buildpacks:
+      - https://github.com/AlteaUP/nodejs-buildpack.git

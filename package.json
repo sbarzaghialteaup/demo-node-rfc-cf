@@ -1,0 +1,23 @@
+{
+    "name": "demo-node-rfc-cf",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "engines": {
+        "node": "12.20.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cmake-js": "^6.1.0",
+        "express": "^4.17.1",
+        "node-rfc": "^2.4.0",
+        "prebuild-install": "^6.0.1"
+    }
+}

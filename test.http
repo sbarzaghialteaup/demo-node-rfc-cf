@@ -1,0 +1,44 @@
+@cf-app-url = https://XXXXX.cfapps.eu10.hana.ondemand.com
+
+### Connect
+POST {{cf-app-url}}/connect HTTP/1.1
+Content-Type: application/json
+
+{
+    "user": "user",
+    "passwd": "password",
+    "ashost": "host",
+    "sysnr": "sys",
+    "client": "mandt",
+    "lang": "EN"
+}
+
+### Ping
+POST {{cf-app-url}}/ping HTTP/1.1
+Content-Type: application/json
+
+### Call RFC STFC_STRUCTURE
+POST {{cf-app-url}}/callRFC/STFC_STRUCTURE HTTP/1.1
+Content-Type: application/json
+
+{
+    "IMPORTSTRUCT": {
+        "RFCINT4": 345,
+        "RFCFLOAT": 1.23456789,
+        "RFCCHAR4": "ABCD",
+        "RFCDATE": "20180625",
+        "RFCDATA1": "HELLO FROM CLOUD FOUNDRY"
+    }
+}
+
+### Call RFC RFC_READ_TABLE
+POST {{cf-app-url}}/callRFC/RFC_READ_TABLE HTTP/1.1
+Content-Type: application/json
+
+{
+    "QUERY_TABLE": "T000"
+}
+
+### Disconnect
+POST {{cf-app-url}}/disconnect HTTP/1.1
+Content-Type: application/json

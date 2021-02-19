@@ -1,0 +1,4 @@
+/node_modules
+/sap/nwrfcsdk/lib/*
+/dev_rfc.log
+my-private-test.http
