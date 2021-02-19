@@ -1,7 +1,7 @@
 # EXAMPLE USING NODE-RFC.JS LIBRARY IN SAP BTP CLOUD FOUNDRY
 
 ## Important
-First of all, connection to backend using cloud connector is not supported by node-rfc library (yet...), only direct connection to backend is possible, so the RFC port must exposed public to internet.
+First of all, connection to backend using cloud connector is not supported by node-rfc library (yet...), only direct connection to backend is possible, so the RFC port of the backend must be exposed public to internet.
 
 ## Prerequisites
 The SAP NetWeaver RFC SDK library is not public so you have to download by yourself.  
@@ -20,7 +20,7 @@ The app expose four http post api, these api internally use the node-rfc library
 - call rfc
 - disconnect
 
-In the file `test.http` there are examples for using the API
+The file `test.http` of this repository contains examples for using the APIs
 
 ## Where is the magic?
 An hack in the standard cf nodejs buildpack, look at the manifest.yaml...
